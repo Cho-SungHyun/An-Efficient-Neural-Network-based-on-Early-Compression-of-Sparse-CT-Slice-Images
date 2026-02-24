@@ -1,16 +1,22 @@
-# An-Efficient-Neural-Network-based-on-Early-Compression-of-Sparse-CT-Slice-Images
+# An Efficient Neural Network based on Early Compression of Sparse CT Slice Images
 
-This repository contains the conceptual framework and research focus for the paper published in **IEEE Access (or Digestive and Liver Disease - 해당 저널명에 맞춰 수정)**.
+This repository highlights the research and architectural design for efficient medical image processing, as published in **IEEE Access**.
 
-### 📄 Research Overview
-This study investigates channel compression techniques to accelerate **CT image processing**. The core objective is to balance computational efficiency with diagnostic precision, making deep learning models more viable for real-time medical imaging applications.
+### 🚀 Key Achievement: 3.5x Speedup
+The core of this research is a computationally efficient CNN architecture optimized for CT image sequences. It is specifically designed for environments with limited computing power (e.g., mobile/embedded devices) without sacrificing prediction accuracy.
+
+**Performance Metric:** Achieved **~3.5x actual speedup** over ShuffleNet-v2 on real-world CT datasets.
+
+### 🛠 Technical Innovations
+To achieve high-speed inference on serial CT image slices, the proposed model implements:
+- **Pointwise Convolution & Depth-wise Separable Convolution:** To drastically reduce the number of parameters and floating-point operations.
+- **Channel Shuffle Operations:** To maintain cross-channel information flow while minimizing computational overhead.
+- **Optimized for Sparse Data:** Tailored to handle the unique characteristics of CT slice sequences efficiently.
 
 ### 🔗 Official Publication
-The full research paper and methodology can be found at the official IEEE Xplore link below:
+The full methodology, experiments, and results are available via the official IEEE Xplore link:
 **[Read the Full Paper on IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9680749)**
 
 ---
-### Key Contributions:
-- Developed an early compression strategy for sparse medical data.
-- Optimized neural network architecture for embedded or high-throughput medical environments.
-- Validated performance against conventional deep learning models in the medical domain.
+### Why this matters for Production ML:
+This project demonstrates my ability to not only build accurate models but to **optimise for production constraints**. Whether it's medical imaging or high-throughput ad-tech requests, I focus on delivering state-of-the-art performance within strict latency and compute budgets.
